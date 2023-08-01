@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+    * {margin: 0; padding: 0;}
+    a {text-decoration: none;}
+    ol, ul {list-style: none}
+		h3 {font-weight: bold;}
+
+   	.wrap {display: flex;    
+   		flex-direction: row;
+        justify-content: space-between;}
+	.info {width:48%}
+	.btn-white {background-color: #fff}
+	
+	.faci {
+		width:90%;
+		margin: 0 auto;
+		margin-bottom: 80px}
+	.faciWrap {
+		display: flex;    
+   		flex-direction: row;
+        justify-content: space-around;
+	}
+	.faciWrap>div {text-align: center;}
+	.faciWrap .fas, .far {font-size: 35px;}
+	
+	.btnWrap {display: flex;    
+   		flex-direction: row;
+        justify-content: center;
+        margin: 50px 0px}
+   
+    .debtn {padding:10px 40px;
+    	background-color: #cddc39;
+    	cursor: pointer;
+    	border: 1px solid #cddc39;
+    	border-bottom:none}
+    	
+    .select {
+    	background-color: #fff;
+    }
+	
+	.info-table tr, td, th {border: 1px solid #dedede;
+		text-align: center}

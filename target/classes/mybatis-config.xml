@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- null 허용 : ex) getFileUrl() 리턴값이 null이면 에러가 발생
+            null 인 경우 "" 로 다 바꿔줘야하는 번거로움이 있어서 null을 허용
+        -->
+        <setting name="jdbcTypeForNull" value="VARCHAR"/>
+    </settings>
+    <mappers>    <!-- sql 구문을 저장하고 있는 패키지 설정 : interface의 패키지를 설정해줌 -->
+        <package name="dao.mapper"/>    <!-- 인터페이스를 쓸 거기 때문에 dao.mapper 안에 있는 인터페이스를 mapper로 쓸 것. -->
+    </mappers>
+</configuration>
